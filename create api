@@ -1,0 +1,6 @@
+const http = require("http");
+http.createServer((req, resp)=>{
+  resp.writeHead(200, {"contetn-type":"application\json"})
+  resp.write(JSON.stringify({"raut":"developer"}));
+  resp.end();
+}).listen(5000);
